@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="icon" href="./favicon.png" />
+  <title>
+    博幼基金會線上單字大賽
+  </title>
+  <!-- Andika (SIL): literacy typeface for beginning readers — single-story a/g. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <style>
+    .nobouncing {
+      overscroll-behavior: none;
+    }
+
+    @viewport {
+      width: device-width;
+      initial-scale: 1;
+    }
+
+    .loadingico {
+      color: aquamarine;
+      text-shadow: 2px 2px darkcyan;
+      font-size: 4rem;
+    }
+
+    .loadingProgress {
+      color: aquamarine;
+      text-shadow: 2px 2px darkcyan;
+      font-size: 2rem;
+    }
+
+    @media screen and (min-width: 400px) {
+      .loadingico {
+        color: aquamarine;
+        text-shadow: 2px 2px darkcyan;
+        font-size: 8rem;
+      }
+
+      .loadingProgress {
+        color: aquamarine;
+        text-shadow: 2px 2px darkcyan;
+        font-size: 4rem;
+      }
+    }
+
+    .spinning {
+      animation: spin 3s infinite linear;
+    }
+
+    .bouncing1 {
+      animation: bouncing 1s infinite ease-in-out;
+      animation-delay: 0s;
+    }
+
+    .bouncing2 {
+      animation: bouncing 1s infinite ease-in-out;
+      animation-delay: 100ms;
+    }
+
+    .bouncing3 {
+      animation: bouncing 1s infinite ease-in-out;
+      animation-delay: 200ms;
+    }
+
+    @keyframes bouncing {
+      0% {
+        transform: translateY(0);
+      }
+
+      25% {
+        transform: translateY(-2rem) scale(1.5);
+      }
+
+      50% {
+        transform: scale(1.25) translateY(0);
+      }
+
+      75% {
+        transform: translateY(-1rem) scale(1.5);
+      }
+
+      100% {
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <script type="module" crossorigin src="/boyo-vb-competition/assets/index-BXcF7XhR.js"></script>
+  <link rel="stylesheet" crossorigin href="/boyo-vb-competition/assets/index-CKxKRKsz.css">
+</head>
+
+<body class="nobouncing">
+  <noscript>
+    <strong>We're sorry but doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
